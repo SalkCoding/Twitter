@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f38ccbd3-65b4-4dd8-a141-8b59d5d2c365" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Twitter.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Option.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/ConnectionConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Block.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/CommentLike.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Follow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Notification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Post.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/PostLike.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/BlockService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/CommentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/FollowService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/LikeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/NotificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/PostService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/UserService.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2Xqhm27mVwcUuU6oK78v0NEdQ3s" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/Programming/IntelliJ IDEA/Java/Twitter/lib/mysql-connector-j-8.2.0",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Twitter" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f38ccbd3-65b4-4dd8-a141-8b59d5d2c365" name="Changes" comment="" />
+      <created>1699362672225</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699362672225</updated>
+      <workItem from="1699362673223" duration="469000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
