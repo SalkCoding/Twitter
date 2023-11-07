@@ -4,31 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f38ccbd3-65b4-4dd8-a141-8b59d5d2c365" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Twitter.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Option.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/ConnectionConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Block.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/CommentLike.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Follow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Notification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Post.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/PostLike.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/BlockService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/CommentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/FollowService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/LikeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/NotificationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/PostService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/UserService.java" afterDir="false" />
+    <list default="true" id="f38ccbd3-65b4-4dd8-a141-8b59d5d2c365" name="Changes" comment="PostLike까지 완료.">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_8_2.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,10 +15,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2Xqhm27mVwcUuU6oK78v0NEdQ3s" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -49,28 +28,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/Programming/IntelliJ IDEA/Java/Twitter/lib/mysql-connector-j-8.2.0",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Programming/IntelliJ IDEA/Java/Twitter/lib/mysql-connector-j-8.2.0&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -81,6 +61,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -93,14 +74,36 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1699362672225</updated>
-      <workItem from="1699362673223" duration="469000" />
+      <workItem from="1699362673223" duration="832000" />
     </task>
+    <task id="LOCAL-00001" summary="PostLike까지 완료.">
+      <option name="closed" value="true" />
+      <created>1699363472137</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699363472137</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="PostLike까지 완료." />
+    <option name="LAST_COMMIT_MESSAGE" value="PostLike까지 완료." />
   </component>
 </project>
