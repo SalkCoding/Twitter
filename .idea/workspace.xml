@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f38ccbd3-65b4-4dd8-a141-8b59d5d2c365" name="Changes" comment="PostLike까지 완료.">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_8_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/FollowService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/FollowService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/LikeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/LikeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +18,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="init" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
@@ -74,7 +83,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1699362672225</updated>
-      <workItem from="1699362673223" duration="832000" />
+      <workItem from="1699362673223" duration="1395000" />
+      <workItem from="1699454053989" duration="4977000" />
     </task>
     <task id="LOCAL-00001" summary="PostLike까지 완료.">
       <option name="closed" value="true" />
@@ -84,7 +94,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699363472137</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="PostLike까지 완료.">
+      <option name="closed" value="true" />
+      <created>1699363695206</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699363695206</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

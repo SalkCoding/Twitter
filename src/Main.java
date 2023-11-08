@@ -1,7 +1,9 @@
 import config.ConnectionConfig;
+import entity.Post;
 import entity.User;
 import service.FollowService;
 import service.LikeService;
+import service.PostService;
 import service.UserService;
 
 import java.sql.*;
@@ -9,13 +11,14 @@ import java.util.*;
 
 public class Main {
 
-    private static final boolean DEBUG = true;
+    private static final boolean DEBUG = false;
 
     //Connection
     private static final Connection connection = ConnectionConfig.getNewConnection();
 
     //Services
     private static final UserService userService = new UserService(connection);
+    private static final PostService postService = new PostService(connection);
     private static final FollowService followService = new FollowService(connection);
     private static final LikeService likeService = new LikeService(connection);
 
@@ -25,33 +28,57 @@ public class Main {
     //HashSet for online users Key: user(user_id)
     private static final Set<String> onlineUserSet = new HashSet<>();
 
-    private static User user;
-
     public static void main(String[] args) throws SQLException {
+        User user;
         if (!DEBUG) {
-            println("You have to sign-in before using!");
-
-            //Sign-in
-            String id, pw;
-
             while (true) {
-                println("Enter your ID and PW");
+                println("1. Sign in");
+                println("2. Sign up");
+                String selected = scanner.nextLine();
+                if (selected.equalsIgnoreCase("1")) {
+                    //Sign-in
+                    String id, pw;
+                    println("Enter your ID and PW");
 
-                print("ID: ");
-                id = scanner.nextLine();
-                print("PW: ");
-                pw = scanner.nextLine();
+                    print("ID: ");
+                    id = scanner.nextLine();
+                    print("PW: ");
+                    pw = scanner.nextLine();
 
-                if (userService.isValidUser(id, pw)) {
-                    user = userService.getUser(id, pw);
-                    break;
+                    if (userService.isValidUser(id, pw)) {
+                        user = userService.getUser(id, pw);
+                        break;
+                    }
+
+                    println("Wrong ID or PW! Enter correctly!\n");
+                } else if (selected.equalsIgnoreCase("2")) {
+                    //Sign-up
+                    String name, id, pw;
+                    println("Enter your name, ID and PW");
+
+                    print("Name: ");
+                    name = scanner.nextLine();
+                    print("ID: ");
+                    id = scanner.nextLine();
+                    print("PW: ");
+                    pw = scanner.nextLine();
+
+                    if (!userService.isDuplicatedUserId(id)) {
+                        user = userService.createUser(name, id, pw);
+                        if (user == null) {
+                            println("Something went wrong, contact with administration.");
+                            continue;
+                        }
+                        break;
+                    }
+
+                    println("Someone use that ID already, enter something else!\n");
+                } else {
+                    println("Wrong option! Select correctly!\n");
+
                 }
-
-                println("Wrong ID or PW! Enter correctly!\n");
             }
-        } else {
-            user = new User("1", "1q2w3e4r5t", "Kim", "2023-11-07");
-        }
+        } else user = new User("1", "1q2w3e4r5t", "Kim", "2023-11-07");
 
         Option[] options = Option.values();
         while (true) {
@@ -73,18 +100,36 @@ public class Main {
                     print("Write content: ");
                     String content = scanner.nextLine();
                     //Write post
+                    postService.writePost(user.userId(), content);
+                    println("Post uploaded!\n");
                 }
                 case READ_POST -> {
                     //Get all posts and show them to user
+                    List<Post> postList = postService.getPostList();
+                    println("Here are list of uploaded posts.");
+                    for (Post post : postList) {
+                        println("Post id: " + post.postId());
+                        println("Written by: " + post.writerId());
+                        println("");
+                    }
 
-                    print("Select want to read: ");
+                    print("Enter the post id want to read: ");
                     String wantToRead = scanner.nextLine();
                     //Read post
+                    Post post = postService.readPost(wantToRead);
+                    if (post == null) {
+                        println("Incorrect post id!\n");
+                        continue;
+                    }
+                    println("Post id: " + post.postId());
+                    println("content: " + post.content());
+                    println("Written by: " + post.writerId());
+                    println("");
 
                     //Check user want to read comments on this post.
-                    println("Want to read comments?");
-
-                    //Read comments
+                    /*println("Want to read comments? (y/n)");
+                    String wantToReadComment = scanner.nextLine();*/
+                    //TODO additional feature reading comments
                 }
                 case LIKE_POST -> {
                     //Show posts
@@ -103,7 +148,7 @@ public class Main {
                     print("Select the comment that want to leave a like: ");
                     String wantToLike = scanner.nextLine();
 
-                    //Leave Like on post
+                    //TODO additional feature leaving Like on post
                 }
                 case FOLLOW_USER -> {
                     println("Enter an user id you want to follow!");
@@ -125,14 +170,15 @@ public class Main {
                     }
                 }
                 case BLOCK_USER -> {
-                    //Same as a Follow mechanism
+                    //TODO additional feature same as a Follow mechanism
                 }
                 case SHOW_ACTIVITY -> {
-                    //Show use his id to show all related data on this user
+                    //TODO additional feature Showing use his id to show all related data on this user
                 }
                 case EXIT -> System.exit(0);
             }
         }
+
     }
 
     private static void println(String s) {
