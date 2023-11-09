@@ -84,7 +84,7 @@ public class FollowService {
             resultSet = statement.executeQuery();
             List<String> followerList = new ArrayList<>();
             while (resultSet.next()) {
-                followerList.add(resultSet.getString(1));
+                followerList.add(resultSet.getString(2));
             }
             return followerList;
         } catch (SQLException e) {
