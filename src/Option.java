@@ -1,9 +1,11 @@
+//For scalability
 public enum Option {
     WRITE_POST,
     READ_POST,
     LIKE_POST,
     LIKE_COMMENT,
     FOLLOW_USER,
+    SEE_MY_FOLLOWERS,
     BLOCK_USER,
     SHOW_ACTIVITY,
     EXIT;
@@ -28,6 +30,7 @@ public enum Option {
             case LIKE_POST -> "Leave a like on the post.";
             case LIKE_COMMENT -> "Leave a like on the comment.";
             case FOLLOW_USER -> "Follow the user.";
+            case SEE_MY_FOLLOWERS -> "See my followers list.";
             case BLOCK_USER -> "Block the user.";
             case SHOW_ACTIVITY -> "Show my activity.";
             case EXIT -> "Exit.";

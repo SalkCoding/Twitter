@@ -1,4 +1,5 @@
 import config.ConnectionConfig;
+import entity.Follow;
 import entity.Post;
 import entity.User;
 import service.FollowService;
@@ -168,6 +169,12 @@ public class Main {
                         followService.addFollower(targetId, user.userId());
                         println("Add follow data.\n");
                     }
+                }
+                case SEE_MY_FOLLOWERS -> {
+                    println("My followers list");
+                    List<String> followerList = followService.getFollowerList(user.userId());
+                    println("Total followers: " + followerList.size());
+                    println(String.join(", ", followerList));
                 }
                 case BLOCK_USER -> {
                     //TODO additional feature same as a Follow mechanism

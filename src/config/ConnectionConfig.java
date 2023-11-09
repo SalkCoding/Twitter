@@ -10,7 +10,7 @@ public class ConnectionConfig {
     private final static String dbName = "twitter";
 
     private final static String user = "root";
-    private final static String password = "salk1104";
+    private final static String password = "salk1104-";
 
     private static Connection previousConnection;
 
